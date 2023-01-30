@@ -4,6 +4,13 @@
     table, th, td {
         border:2px solid rgb(194, 166, 120);
     }
+    div.container {
+        text-align: center;
+    }
+    ol.list {
+        display: inline-block;
+        text-align: left;
+    }
 </style>
 <head>
     <meta charset="UTF-8">
@@ -11,28 +18,29 @@
 	<!-- <link rel="stylesheet" href="css/css-file.css">
 	<script type="text/javascript" src="js/js-file.js"></script> -->
 </head>
-<body>
+<body style = "text-align: center;">
     <h1> Welcome to popcat </h1>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEfQhyejzgzr-6xRfcHl6klGw5bjRUK1qcJg&usqp=CAU" alt="pop cat"><br><br>
-    <a href="https://popcat.click/">Click and visit the pop cat!</a><br>
+    <a href="https://popcat.click/">Click and visit the pop cat!</a><br><br><hr>
     
     <h2>Leaderboard</h2>
-    <ol>
-      <li>Hongkong</li>
-        <ul>
-            <li>122,324M</li>
-        </ul>
-      <li>Thailand</li>
-        <ul>
-            <li>117,717M</li>
-        </ul>
-      <li>Taiwan</li>
-        <ul>
-            <li>110,134M</li>
-        </ul>
-    </ol> 
-    
-    <table style="text-align: center; width: 75%">
+    <div class = "container">
+        <ol class = "list">
+            <li>Hongkong</li>
+              <ul>
+                  <li>122,324M</li>
+              </ul>
+            <li>Thailand</li>
+              <ul>
+                  <li>117,717M</li>
+              </ul>
+            <li>Taiwan</li>
+              <ul>
+                  <li>110,134M</li>
+              </ul>
+          </ol> 
+    </div><hr><br>
+    <table style="text-align: center; width: 75%; margin-left:auto;margin-right:auto;">
         <tr>
             <th></th>
             <th>Cat species</th>
