@@ -1,0 +1,17 @@
+.card{
+    position: relative;
+    background: rgb(191, 219, 255);
+    top: 200px;
+    left: 450px;
+    width: 550px;
+    height: 200px;
+    padding: 20px;
+}
+.text{
+   position: absolute;
+   top: 10px;
+   left: 350px;
+}
+.img{
+    float: left;
+}
