@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise1</title>
+	<!-- <link rel="stylesheet" href="css/hw.css"> -->
+	<!-- <script type="text/javascript" src="js/js-file.js"></script> -->
+</head>
+<body>
+<h2>HTML Forms</h2>
+
+<form>
+  <label for="fname">Text input:</label><br>
+  <input type="text" id="fname" placeholder="type here" pattern="[A-Z][a-z]*"><br><br>
+  <button onclick="check()" type="button">Submit
+</form>
+
+<script>
+	function check() {
+      var input = document.getElementById("fname").value;
+      if (input.charAt(0) == input.charAt(0).toUpperCase()) {
+          console.log("String's first character is uppercase.") }
+      else {
+          console.log("String's first character is not uppercase.") }
+	}
+</script>
+
+</body>
+</html>
+

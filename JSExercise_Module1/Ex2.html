@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise2</title>
+	<!-- <link rel="stylesheet" href="css/hw.css"> -->
+	<!-- <script type="text/javascript" src="js/js-file.js"></script> -->
+</head>
+<body>
+
+<form>
+  <button onclick="addFruit()" type="button">Add Your Favorite!</button>
+</form>
+
+<p>List of my favorite fruits:</p>
+
+<ul>
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Grape</li>
+</ul>
+
+<script>
+function addFruit() {
+    let text;
+    let FruitInput = prompt("What is your favorite fruit?");
+    if (FruitInput == null || FruitInput == "") {} 
+    else {
+        var node = document.createElement('li');
+        node.appendChild(document.createTextNode(FruitInput));
+        document.querySelector('ul').appendChild(node);
+    }
+}
+</script>
+
+</body>
+</html>
+
