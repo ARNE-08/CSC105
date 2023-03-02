@@ -11,7 +11,13 @@
 }
 
 .aboutus {
+    width: 100%;
     border-bottom: 1px ridge;
+}
+
+.his {
+    width: 50%;
+    /* margin: 0px auto; */
 }
 
 .footer {
