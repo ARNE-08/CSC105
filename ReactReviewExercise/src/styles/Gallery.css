@@ -1,0 +1,11 @@
+.Gallery {
+    margin: 20px;
+}
+
+img {
+    transition: transform 1s;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
