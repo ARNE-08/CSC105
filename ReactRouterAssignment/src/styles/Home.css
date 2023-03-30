@@ -1,0 +1,11 @@
+.login {
+    background: rgb(77,123,222);
+    background: linear-gradient(90deg, rgba(77,123,222,1) 0%, rgba(132,87,255,1) 100%);
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
