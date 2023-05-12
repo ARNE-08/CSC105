@@ -50,7 +50,6 @@ const RegisterForm = ({ setIsLogin = () => { }, setStatus = () => { } }) => {
         msg: e.message,
         severity: 'error',
       });
-      11
     }
   };
 
