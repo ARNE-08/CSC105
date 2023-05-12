@@ -9,6 +9,7 @@ const CommentCard = ({ comment = { id: -1, msg: '' }, setComments = () => { } })
   const { user, setStatus } = useContext(GlobalContext);
   const [isConfirm, setIsConfirm] = useState(false);
   const [functionMode, setFunctionMode] = useState('update');
+  // const [msg, setMsg] = useState(comment.msg);
   const [msg, setMsg] = useState(comment.msg);
   const [msgError, setMsgError] = useState('');
 
@@ -115,8 +116,11 @@ const CommentCard = ({ comment = { id: -1, msg: '' }, setComments = () => { } })
       {!(isConfirm && functionMode == 'update') ? (
         <Typography sx={{ flex: 1 }}>{comment.msg}</Typography>
       ) : (
-        <TextField sx={{ flex: 1 }} value={msg} error={msgError !== ''}
-          helperText={msgError} onChange={(e) => setMsg(e.target.value)} />
+        <TextField sx={{ flex: 1 }}
+          value={msg}
+          onChange={(e) => setMsg(e.target.value)}
+          error={msgError !== ''}
+          helperText={msgError} />
       )}
       {!isConfirm ? (
         <Button onClick={() => changeMode('update')} variant="outlined" color="info">
