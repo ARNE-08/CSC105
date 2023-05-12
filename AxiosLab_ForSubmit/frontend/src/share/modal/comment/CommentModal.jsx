@@ -41,8 +41,8 @@ const CommentModal = ({ open = false, handleClose = () => { } }) => {
       });
       if (response.data.success) {
         setStatus({ severity: 'success', msg: 'Create comment successfully' });
-        setComments((comments) => [...comments, { id: Math.random(), msg: textField }]);
-        // resetAndClose();
+        setComments((comments) => [...comments, { id: response.data.data.id, msg: textField }]);
+        setTextField('');
       }
     } catch (e) {
       setTextField('');
