@@ -62,7 +62,7 @@ const CommentCard = ({ comment = { id: -1, msg: '' }, setComments = () => { } })
         );
         // 2. if successful, set status and remove note from state
         if (response.data.success) {
-          setStatus({ severity: 'success', msg: 'Delete note successfully' });
+          setStatus({ severity: 'success', msg: 'Delete comment successfully' });
           setComments((comments) => comments.filter((c) => c.id !== comment.id));
           cancelAction();
         }
