@@ -35,12 +35,12 @@ const CommentCard = ({ comment = { id: -1, msg: '' }, setComments = () => { } })
             headers: { Authorization: `Bearer ${userToken}` },
           }
         );
+        console.log(response.data.data.text)
         // 3. if successful, update note in state and close modal
         if (response.data.success) {
           setStatus({ severity: 'success', msg: 'Update comment successfully' });
-          setComments((prev) => prev.map((c) => (c.id === comment.id ?
-            response.data.data : c)));
-          setIsConfirm(false);
+          setComments((comments) => comments.map((c) => (c.id === comment.id ? { ...c, msg: response.data.data.text } : c)));
+          cancelAction();
           // setMsgs((msgs) =>
           //   msgs.map((c) => {
           //     if (c.id === comment.id) {
